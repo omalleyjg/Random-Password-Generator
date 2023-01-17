@@ -1,21 +1,25 @@
 // Assignment Code
 var generateBtn = document.querySelector("#generate");
 
-//Password object
+function generatePassword(){
+  console.log("Button pressed.");
 
-var passwordCriteria = {
-
-  passwordLength: 0,
-
-  lowerCase: [abcdefghijklmnopqrstuvwxyz],
-
-  upperCase: [ABCDEFGHIJKLMNOPQRSTUVWXYZ],
-
-  numbers: [1234567890],
-
-  symbols: [!@#$%&*?],
-
+  //1. prompt the user for password length 8 < 128
   
+  //2. validate length of password based on user input
+  
+  //3. prompt the user for uppercase letters
+  
+  //4. prompt the user for lowercase letters
+  
+  //5. prompt the user for numbers
+  
+  //6. prompt the user for symbols
+  
+  //7. generte random password based on criteria
+  
+  //8. return passowrd to page
+  return ("Password will go here.")
 }
 
 
@@ -30,5 +34,3 @@ function writePassword() {
 
 // Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
-
-
