@@ -15,7 +15,11 @@ var generateBtn = document.querySelector("#generate");
 function generatePassword() {
   console.log("Button pressed.");
   var password = "";
-  for (i = 0; i < passwordLength; i++);
+  for (i = 0; i < passwordLength; i++){
+    var randomLetter = Math.floor(Math.random() * choiceArr.length);
+    password = password + choiceArr[randomLetter];
+  }
+  return password;
 }
 
 function getPrompts() {
@@ -48,12 +52,13 @@ return true;
 function writePassword() {
 
   var prompts = getPrompts();
+  var passwordText = document.querySelector("#password");
 
   if (prompts) {
-    var password = generatePassword();
-    var passwordText = document.querySelector("#password");
+    var newPassword = generatePassword();
+    
 
-    passwordText.value = password;
+    passwordText.value = newPassword;
   }
 }
 
