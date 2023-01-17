@@ -22,11 +22,10 @@ i learned the basic fundemantals of javascript so that i may use it further in t
 
 ## Usage
 
-![screenshot 1](assets/03-javascript-homework-demo.png)
+![screenshot 1](./Assets/03-javascript-homework-demo.png)
 
-```
 Click the "Generate Password" button and enter what length you would like your password to be and what kind of characters and symbols you would like to include.
-```
+
 
 ## Credit
 
